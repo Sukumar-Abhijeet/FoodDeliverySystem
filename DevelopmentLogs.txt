@@ -1,0 +1,33 @@
+Location Screen : 
+    1.PermissionAndroid (Android only)
+    check : autoDetect();
+
+AuthenticationScreen : 
+    1.MultiplePermissions (Android Only)
+	check : this.accessMultiplePermissions();
+
+Gradle Version Changed 
+
+FireBase Integration : 
+	references - https://medium.com/@anum.amin/react-native-integrating-push-notifications-using-fcm-349fff071591
+Maps Integration : 
+	references - https://medium.freecodecamp.org/how-to-integrate-maps-in-react-native-using-react-native-maps-	5745490fe055,
+	Different versions have been used for google-play-services , google-play-base , google-play-maps for all 	android packages.
+	Check dependencies by gradle app:dependencies , where app = any appmoudle you want to check dependency.
+	(You need to install the latest version of gradle in your pc by global to access in your project)
+
+ManifestFile permissions added : 
+     <uses-permission android:name="android.permission.CAMERA" />
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+
+Location Screen	
+navigator.geolocation issue in react native 
+Alternate packager used;
+	references - https://www.npmjs.com/package/react-native-geolocation-service
+
+LocationScreen Maps marker is replaced by "fake marker"
+android /app/build.gradle must be arranged in a sequence to discard dependencies errors.
+
+React-native-firebase is getting crahsed ..
+try reference https://github.com/evollu/react-native-fcm/tree/firebase/Examples/firebase-migration

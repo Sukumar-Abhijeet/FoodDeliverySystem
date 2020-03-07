@@ -1,0 +1,15 @@
+{
+  "name": "BMFUser",
+  "displayName": "BMFUser",
+  "android": {
+    "package": "in.bringmyfood",
+    "versionCode": 15,
+    "icon": "./assets/logohd.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=in.bringmyfood",
+    "config": {
+      "googleMaps": {
+        "apiKey": "AIzaSyC4hC-Svfjb89mTn0lMX0wvxPezlxG1uOI"
+      }
+    }
+  }
+}
